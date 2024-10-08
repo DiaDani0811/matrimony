@@ -13,10 +13,10 @@ import { ToastService } from 'src/app/services/toast.service';
 
 @Component({
   selector: 'app-daily-recommendations',
-  templateUrl: './daily-recommendations.page.html',
-  styleUrls: ['./daily-recommendations.page.scss'],
+  templateUrl: './suggestions.component.html',
+  styleUrls: ['./suggestions.component.scss'],
 })
-export class DailyRecommendationsPage implements OnInit {
+export class Suggestions implements OnInit {
 
   @ViewChildren(IonCard, { read: ElementRef }) cards: QueryList<ElementRef>;
 
@@ -121,7 +121,7 @@ export class DailyRecommendationsPage implements OnInit {
           .create()
           .addElement(card.nativeElement)
           .duration(1500)
-          .from('transform', `rotate(40deg)`)
+          .from('transform', `rotate(0deg)`)
           .to('transform', `translateX(${+this.platform.width() * 2}px)`);
         animation.play();
         this.profileStatus(true);
@@ -132,7 +132,7 @@ export class DailyRecommendationsPage implements OnInit {
           .create()
           .addElement(card.nativeElement)
           .duration(1500)
-          .from('transform', `rotate(40deg)`)
+          .from('transform', `rotate(0deg)`)
           .to('transform', `translateX(-${+this.platform.width() * 2}px)`);
         animation.play();
         this.profileStatus(false);

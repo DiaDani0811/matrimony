@@ -4,8 +4,8 @@ import { StorageService } from 'src/app/services/storage.service';
 
 @Component({
   selector: 'app-profile',
-  templateUrl: './profile.page.html',
-  styleUrls: ['./profile.page.scss'],
+  templateUrl: './profile.component.html',
+  styleUrls: ['./profile.component.scss'],
 })
 
 export class ProfilePage implements OnInit {
@@ -16,15 +16,15 @@ export class ProfilePage implements OnInit {
     loop: true,
     slidesPerView: Math.floor(window.innerWidth / 298),
   };
-  profileData: any;
+  profileData;
 
   constructor(
     private route: ActivatedRoute,
     private storage: StorageService,
   ) {
     this.route.queryParams.subscribe(params => {
-      if (params && params['profileId']) {
-        this.profileData = this.storage.getProfileData().filter((profile : any) => profile.id === params['profileId'])[0];
+      if (params && params.profileId) {
+        this.profileData = this.storage.getProfileData().filter((profile) => profile.id === params.profileId)[0];
         console.log(this.profileData);
       }
     });

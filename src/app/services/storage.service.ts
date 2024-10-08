@@ -11,7 +11,7 @@ export class StorageService {
   ) { }
 
   storeProfileData() {
-    this.http.get('assets/profiles.json').subscribe((response) => {
+    this.http.get('assets/json/profiles.json').subscribe((response) => {
       const profilesData = response;
       if (profilesData !== undefined) {
         localStorage.setItem('PROFILES', JSON.stringify(profilesData));
@@ -20,7 +20,7 @@ export class StorageService {
   }
 
   getProfileData() {
-    const profilesData = localStorage.getItem('PROFILES') || '';
+    const profilesData = localStorage.getItem('PROFILES');
     if(profilesData!==undefined) {
       return JSON.parse(profilesData);
     }

@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { MyMatchesPage } from './my-matches.page';
+import { PendingSection } from './pending-section.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: MyMatchesPage
+    component: PendingSection
   }
 ];
 

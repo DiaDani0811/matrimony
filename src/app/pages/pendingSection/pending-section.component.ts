@@ -4,10 +4,10 @@ import { StorageService } from 'src/app/services/storage.service';
 
 @Component({
   selector: 'app-my-matches',
-  templateUrl: './my-matches.page.html',
-  styleUrls: ['./my-matches.page.scss'],
+  templateUrl: './pending-section.component.html',
+  styleUrls: ['./pending-section.component.scss'],
 })
-export class MyMatchesPage implements OnInit {
+export class PendingSection implements OnInit {
 
   public profiles = [];
 

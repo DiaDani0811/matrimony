@@ -1,12 +1,12 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { MyMatchesPageRoutingModule } from './my-matches-routing.module';
+import { MyMatchesPageRoutingModule } from './pending-section-routing.module';
 
-import { MyMatchesPage } from './my-matches.page';
+import { PendingSection } from './pending-section.component';
 
 @NgModule({
   imports: [
@@ -15,6 +15,6 @@ import { MyMatchesPage } from './my-matches.page';
     IonicModule,
     MyMatchesPageRoutingModule
   ],
-  declarations: [MyMatchesPage]
+  declarations: [PendingSection]
 })
-export class MyMatchesPageModule {}
+export class PendingSectionModule {}

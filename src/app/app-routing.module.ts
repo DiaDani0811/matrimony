@@ -12,12 +12,12 @@ const routes: Routes = [
     loadChildren: () => import('./pages/home/home.module').then(m => m.HomePageModule)
   },
   {
-    path: 'my-matches',
-    loadChildren: () => import('./pages/my-matches/my-matches.module').then(m => m.MyMatchesPageModule)
+    path: 'PendingSection',
+    loadChildren: () => import('./pages/pendingSection/pending-section.module').then(m => m.PendingSectionModule)
   },
   {
-    path: 'daily-recommendations',
-    loadChildren: () => import('./pages/daily-recommendations/daily-recommendations.module').then(m => m.DailyRecommendationsPageModule)
+    path: 'Suggestions',
+    loadChildren: () => import('./pages/suggestions/suggestions.module').then(m => m.SuggestionsModule)
   },
   {
     path: 'profile',
@@ -27,7 +27,7 @@ const routes: Routes = [
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })
+    RouterModule.forRoot(routes)
   ],
   exports: [RouterModule]
 })

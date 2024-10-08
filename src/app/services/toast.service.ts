@@ -14,7 +14,7 @@ export class ToastService {
     this.isToasting = true;
     this.toast.create({
       message,
-      position: 'bottom',
+      position: 'top',
       duration: 2500
     }).then((load) => {
       load.present().then(() => {
@@ -29,7 +29,7 @@ export class ToastService {
     this.isToasting = true;
     this.toast.create({
       message,
-      position: 'bottom',
+      position: 'top',
       duration: 2500,
       color: 'success'
     }).then((load) => {
@@ -45,7 +45,7 @@ export class ToastService {
     this.isToasting = true;
     this.toast.create({
       message,
-      position: 'bottom',
+      position: 'top',
       duration: 2500,
       color: 'danger'
     }).then((load) => {
@@ -61,7 +61,7 @@ export class ToastService {
     this.isToasting = true;
     this.toast.create({
       message,
-      position: position ? position : 'bottom',
+      position: position ? position : 'top',
       duration,
       color
     }).then((load) => {

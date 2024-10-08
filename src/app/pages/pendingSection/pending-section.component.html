@@ -3,7 +3,7 @@
     <ion-buttons slot="start">
       <ion-back-button></ion-back-button>
     </ion-buttons>
-    <ion-title>My Matches</ion-title>
+    <ion-title>Pending Section</ion-title>
     <ion-buttons slot="end">
       <ion-icon class="custom-icon" name="ellipsis-vertical"></ion-icon>
     </ion-buttons>
@@ -11,6 +11,7 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
+
   <ion-row>
     <ion-slides [options]="sliderConfig">
       <ion-slide *ngFor="let profile of profiles">

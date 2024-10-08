@@ -1,20 +1,20 @@
 [
     {
         "id": "M982545",
-        "name": "Priyanka",
-        "age": 27,
+        "name": "Brie Larson",
+        "age": 25,
         "height": "5 ft 2 in",
-        "language": "Tamil",
+        "language": "English",
         "caste": "Nair",
-        "work": "MBBS Doctor",
-        "location": "Chennai",
-        "state": "TamilNadu",
+        "work": "Actor",
+        "location": "Colorado",
+        "state": "USA",
         "nationality": "India",
-        "image": "./assets/images/priyanka.jpg"
+        "image": "./assets/images/brie.jpg"
     },
     {
         "id": "M982546",
-        "name": "Thanuja",
+        "name": "Emma Watson",
         "age": 27,
         "height": "5 ft 7 in",
         "language": "Tamil",
@@ -23,11 +23,11 @@
         "location": "Chennai",
         "state": "TamilNadu",
         "nationality": "India",
-        "image": "./assets/images/thanuja.jpg"
+        "image": "./assets/images/Emma_Watson.jpg"
     },
     {
         "id": "M982547",
-        "name": "Janaki",
+        "name": "Itziar",
         "age": 27,
         "height": "5 ft 5 in",
         "language": "Tamil",
@@ -36,11 +36,11 @@
         "location": "Chennai",
         "state": "TamilNadu",
         "nationality": "India",
-        "image": "./assets/images/janaki.jpg"
+        "image": "./assets/images/Itziar.jpg"
     },
     {
         "id": "M982548",
-        "name": "Madhu",
+        "name": "Letty",
         "age": 27,
         "height": "5 ft 3 in",
         "language": "Tamil",
@@ -49,11 +49,11 @@
         "location": "Chennai",
         "state": "TamilNadu",
         "nationality": "India",
-        "image": "./assets/images/madhu.jpg"
+        "image": "./assets/images/letty.jpg"
     },
     {
         "id": "M982549",
-        "name": "Lakshmi",
+        "name": "Nairobi",
         "age": 27,
         "height": "5 ft 2 in",
         "language": "Tamil",
@@ -62,6 +62,6 @@
         "location": "Chennai",
         "state": "TamilNadu",
         "nationality": "India",
-        "image": "./assets/images/lakshmi.jpg"
+        "image": "./assets/images/nairobi.jpg"
     }
 ]
